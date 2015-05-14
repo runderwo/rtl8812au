@@ -815,7 +815,7 @@ endif
 
 ifeq ($(CONFIG_PLATFORM_I386_PC), y)
 EXTRA_CFLAGS += -DCONFIG_LITTLE_ENDIAN
-SUBARCH := $(shell uname -m | sed -e s/i.86/i386/)
+SUBARCH := arm
 ARCH ?= $(SUBARCH)
 CROSS_COMPILE ?=
 KVER  := $(shell uname -r)
